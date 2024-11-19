@@ -11,7 +11,7 @@ hi(name,gender)
 02a tao github repo, mo kiemtra tep s00_bailam.py, va lay diachi/url aka githubrepourl
 
 02b dan diachi githubrepourl tu trang web duoiday
-    https://forms.gle/6AYqW1jN3uFGZt2v6
+    https://forms.gle/yJLsZ5pke3dyq3786
 
 --- debai / problem
 Hay viet ham hi(name, gender) xuat ra cau chao theo mota benduoi
@@ -27,6 +27,12 @@ hi(None, None)        | Hi!
 #endregion debai
 
 #region bailam
-def hi(name,gender):
-  return 'todo'
+def hi(name, gender):
+    if not name and not gender: 
+        return "Hi!"
+    if gender == 'f':  # Nếu gender là 'f'
+        return f"Hi Ms {name}!"
+    if gender == 'm': 
+        return f"Hi Mr {name}!"
+    return f"Hi {name}!"
 #endregion bailam
